@@ -1,0 +1,319 @@
+﻿Build started 5/11/2020 12:29:10 AM.
+     1>Project "C:\sahil\development\Window-Detective-3.5.1-src\src\Window Detective.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>CustomBuild:
+         Moc'ing ResizableDockContainer.h...
+         Moc'ing SizeInputWidget.h...
+         Moc'ing SystemColoursPane.h...
+         Moc'ing SystemParametersPane.h...
+         Moc'ing SystemMetricsPane.h...
+         Moc'ing AboutDialog.h...
+         Moc'ing FindDialog.h...
+         Moc'ing HighlightPane.h...
+         Moc'ing InfoPane.h...
+         Moc'ing MainWindow.h...
+         Moc'ing MessageFilterDialog.h...
+         Moc'ing MessageFiltering.h...
+         Moc'ing MessagesPane.h...
+         Moc'ing PreferencesDialog.h...
+         Moc'ing SearchResultsDialog.h...
+         Moc'ing SetPropertiesDialog.h...
+         Moc'ing SystemInfoDialog.h...
+         Moc'ing BalloonTip.h...
+         Moc'ing BrushPropertyWidget.h...
+         Moc'ing ColourButton.h...
+         Moc'ing FontPropertyWidget.h...
+         Moc'ing HexSpinBox.h...
+         Moc'ing MessageWidget.h...
+         Moc'ing SearchCriteriaWidget.h...
+         Moc'ing SearchInputPane.h...
+         Moc'ing TreeItem.h...
+         Moc'ing WindowPicker.h...
+         Moc'ing WindowPropWidget.h...
+         Moc'ing WindowTree.h...
+         Moc'ing AbstractPropertyPage.h...
+         Moc'ing ComboBoxPropertyPage.h...
+         Moc'ing DateTimePickerPropertyPage.h...
+         Moc'ing EditPropertyPage.h...
+         Moc'ing GenericPropertyPage.h...
+         Moc'ing ListBoxPropertyPage.h...
+         Moc'ing ListViewPropertyPage.h...
+         Moc'ing ProgressBarPropertyPage.h...
+         Moc'ing PropertiesPane.h...
+         Moc'ing ScrollPropertyWidget.h...
+         Moc'ing StatusBarPropertyPage.h...
+         Moc'ing TabPropertyPage.h...
+         Moc'ing WindowClassPropertyPage.h...
+         Moc'ing WindowManager.h...
+         Moc'ing Window.h...
+         Uic'ing ui\forms\FindDialog.ui...
+         Uic'ing ui\forms\MainWindow.ui...
+         Uic'ing ui\forms\MessageFilterDialog.ui...
+         Uic'ing ui\forms\MessagesPane.ui...
+         Uic'ing ui\forms\PreferencesDialog.ui...
+         Uic'ing ui\forms\PropertiesPane.ui...
+         Uic'ing ui\forms\SearchResultsDialog.ui...
+         Uic'ing ui\forms\SetPropertiesDialog.ui...
+         Uic'ing ui\forms\SystemInfoDialog.ui...
+         Rcc'ing qt_resources.qrc...
+         Uic'ing ui\forms\SystemMetricsPane.ui...
+         Uic'ing ui\forms\SystemColoursPane.ui...
+         Uic'ing ui\forms\SystemParametersPane.ui...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\sahil\development\Window-Detective-3.5.1-src\src\\" /I"C:\Qt\qtx64_vs2012\mkspecs\win32-msvc2010" /IC:\Qt\qtx64_vs2012\include /IC:\Qt\qtx64_vs2012\include\QtCore /IC:\Qt\qtx64_vs2012\include\QtGui /IC:\Qt\qtx64_vs2012\include\QtWidgets /IC:\Qt\qtx64_vs2012\include\QtXml /I.\ui\forms /IRelease\moc /IRelease\rcc /nologo /W3 /WX- /O1 /D QT_NO_DEBUG /D NDEBUG /D _WINDOWS /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_NO_DEBUG /D QT_GUI_LIB /D QT_CORE_LIB /D QT_THREAD_SUPPORT /D NDEBUG /D QT_WIDGETS_LIB /D QT_XML_LIB /Gm- /EHsc /MD /GS- /fp:precise /Zc:wchar_t- /Zc:forScope /GR /Fo"C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\\" /Fd"C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\vc110.pdb" /Gd /TP /errorReport:prompt -Zm200 -w34100 -w34189 -w34100 -w34189 Release\moc\moc_AboutDialog.cpp Release\moc\moc_AbstractPropertyPage.cpp Release\moc\moc_BalloonTip.cpp Release\moc\moc_BrushPropertyWidget.cpp Release\moc\moc_ColourButton.cpp Release\moc\moc_ComboBoxPropertyPage.cpp Release\moc\moc_DateTimePickerPropertyPage.cpp Release\moc\moc_EditPropertyPage.cpp Release\moc\moc_FindDialog.cpp Release\moc\moc_FontPropertyWidget.cpp Release\moc\moc_GenericPropertyPage.cpp Release\moc\moc_HexSpinBox.cpp Release\moc\moc_HighlightPane.cpp Release\moc\moc_InfoPane.cpp Release\moc\moc_ListBoxPropertyPage.cpp Release\moc\moc_ListViewPropertyPage.cpp Release\moc\moc_MainWindow.cpp Release\moc\moc_MessageFilterDialog.cpp Release\moc\moc_MessageFiltering.cpp Release\moc\moc_MessagesPane.cpp Release\moc\moc_MessageWidget.cpp Release\moc\moc_PreferencesDialog.cpp Release\moc\moc_ProgressBarPropertyPage.cpp Release\moc\moc_PropertiesPane.cpp Release\moc\moc_ResizableDockContainer.cpp Release\moc\moc_ScrollPropertyWidget.cpp Release\moc\moc_SearchCriteriaWidget.cpp Release\moc\moc_SearchInputPane.cpp Release\moc\moc_SearchResultsDialog.cpp Release\moc\moc_SetPropertiesDialog.cpp Release\moc\moc_SizeInputWidget.cpp Release\moc\moc_StatusBarPropertyPage.cpp Release\moc\moc_SystemColoursPane.cpp Release\moc\moc_SystemInfoDialog.cpp Release\moc\moc_SystemMetricsPane.cpp Release\moc\moc_SystemParametersPane.cpp Release\moc\moc_TabPropertyPage.cpp Release\moc\moc_TreeItem.cpp Release\moc\moc_Window.cpp Release\moc\moc_WindowClassPropertyPage.cpp Release\moc\moc_WindowManager.cpp Release\moc\moc_WindowPicker.cpp Release\moc\moc_WindowPropWidget.cpp Release\moc\moc_WindowTree.cpp Release\rcc\qrc_qt_resources.cpp ui\custom_widgets\SizeInputWidget.cpp ui\SystemColoursPane.cpp ui\SystemParametersPane.cpp ui\SystemMetricsPane.cpp window_detective\IniFile.cpp window_detective\Logger.cpp window_detective\main.cpp window_detective\QtHelpers.cpp window_detective\Resources.cpp window_detective\Settings.cpp window_detective\StringFormatter.cpp ui\AboutDialog.cpp ui\ActionManager.cpp ui\FindDialog.cpp ui\HighlightPane.cpp ui\InfoPane.cpp ui\MainWindow.cpp ui\MessageFilterDialog.cpp ui\MessageFiltering.cpp ui\MessagesPane.cpp ui\PreferencesDialog.cpp ui\SearchResultsDialog.cpp ui\SetPropertiesDialog.cpp ui\SystemInfoDialog.cpp ui\custom_widgets\BalloonTip.cpp ui\custom_widgets\BrushPropertyWidget.cpp ui\custom_widgets\ColourButton.cpp ui\custom_widgets\FontPropertyWidget.cpp ui\custom_widgets\HexSpinBox.cpp ui\custom_widgets\MessageWidget.cpp ui\custom_widgets\ScrollPropertyWidget.cpp ui\custom_widgets\SearchCriteriaWidget.cpp ui\custom_widgets\SearchInputPane.cpp ui\custom_widgets\TreeItem.cpp ui\custom_widgets\WindowPicker.cpp ui\custom_widgets\WindowPropWidget.cpp ui\custom_widgets\WindowTree.cpp ui\property_pages\AbstractPropertyPage.cpp ui\property_pages\ComboBoxPropertyPage.cpp ui\property_pages\DateTimePickerPropertyPage.cpp ui\property_pages\EditPropertyPage.cpp ui\property_pages\GenericPropertyPage.cpp ui\property_pages\ListBoxPropertyPage.cpp ui\property_pages\ListViewPropertyPage.cpp ui\property_pages\ProgressBarPropertyPage.cpp ui\property_pages\PropertiesPane.cpp ui\property_pages\StatusBarPropertyPage.cpp ui\property_pages\TabPropertyPage.cpp ui\property_pages\WindowClassPropertyPage.cpp inspector\DynamicData.cpp inspector\MessageHandler.cpp inspector\Process.cpp inspector\RemoteFunctions.cpp inspector\SearchCriteria.cpp inspector\WindowManager.cpp inspector\WindowMessage.cpp inspector\WindowMisc.cpp inspector\ui_controls\Button.cpp inspector\ui_controls\ComboBox.cpp inspector\ui_controls\DateTimePicker.cpp inspector\ui_controls\Edit.cpp inspector\ui_controls\ListBox.cpp inspector\ui_controls\ListView.cpp inspector\ui_controls\ProgressBar.cpp inspector\ui_controls\StatusBar.cpp inspector\ui_controls\Tab.cpp inspector\ui_controls\Window.cpp
+     1>cl : Command line warning D9025: overriding '/Zm1000' with '/Zm200'
+         moc_AboutDialog.cpp
+         moc_AbstractPropertyPage.cpp
+         moc_BalloonTip.cpp
+         moc_BrushPropertyWidget.cpp
+         moc_ColourButton.cpp
+         moc_ComboBoxPropertyPage.cpp
+         moc_DateTimePickerPropertyPage.cpp
+         moc_EditPropertyPage.cpp
+         moc_FindDialog.cpp
+         moc_FontPropertyWidget.cpp
+         moc_GenericPropertyPage.cpp
+         moc_HexSpinBox.cpp
+         moc_HighlightPane.cpp
+         moc_InfoPane.cpp
+         moc_ListBoxPropertyPage.cpp
+         moc_ListViewPropertyPage.cpp
+         moc_MainWindow.cpp
+         moc_MessageFilterDialog.cpp
+         moc_MessageFiltering.cpp
+         moc_MessagesPane.cpp
+         Generating Code...
+         Compiling...
+         moc_MessageWidget.cpp
+         moc_PreferencesDialog.cpp
+         moc_ProgressBarPropertyPage.cpp
+         moc_PropertiesPane.cpp
+         moc_ResizableDockContainer.cpp
+         moc_ScrollPropertyWidget.cpp
+         moc_SearchCriteriaWidget.cpp
+         moc_SearchInputPane.cpp
+         moc_SearchResultsDialog.cpp
+         moc_SetPropertiesDialog.cpp
+         moc_SizeInputWidget.cpp
+         moc_StatusBarPropertyPage.cpp
+         moc_SystemColoursPane.cpp
+         moc_SystemInfoDialog.cpp
+         moc_SystemMetricsPane.cpp
+         moc_SystemParametersPane.cpp
+         moc_TabPropertyPage.cpp
+         moc_TreeItem.cpp
+         moc_Window.cpp
+         moc_WindowClassPropertyPage.cpp
+         Generating Code...
+         Compiling...
+         moc_WindowManager.cpp
+         moc_WindowPicker.cpp
+         moc_WindowPropWidget.cpp
+         moc_WindowTree.cpp
+         qrc_qt_resources.cpp
+         SizeInputWidget.cpp
+         SystemColoursPane.cpp
+         SystemParametersPane.cpp
+         SystemMetricsPane.cpp
+         IniFile.cpp
+         Logger.cpp
+         main.cpp
+         QtHelpers.cpp
+         Resources.cpp
+         Settings.cpp
+         StringFormatter.cpp
+         AboutDialog.cpp
+         ActionManager.cpp
+         FindDialog.cpp
+         HighlightPane.cpp
+         Generating Code...
+         Compiling...
+         InfoPane.cpp
+         MainWindow.cpp
+         MessageFilterDialog.cpp
+         MessageFiltering.cpp
+     1>ui\MessageFiltering.cpp(48): warning C4100: 'role' : unreferenced formal parameter
+     1>ui\MessageFiltering.cpp(48): warning C4100: 'orientation' : unreferenced formal parameter
+     1>ui\MessageFiltering.cpp(48): warning C4100: 'section' : unreferenced formal parameter
+     1>ui\MessageFiltering.cpp(52): warning C4100: 'index' : unreferenced formal parameter
+         MessagesPane.cpp
+         PreferencesDialog.cpp
+         SearchResultsDialog.cpp
+         SetPropertiesDialog.cpp
+         SystemInfoDialog.cpp
+         BalloonTip.cpp
+         BrushPropertyWidget.cpp
+         ColourButton.cpp
+         FontPropertyWidget.cpp
+         HexSpinBox.cpp
+         MessageWidget.cpp
+     1>ui\custom_widgets\MessageWidget.cpp(200): warning C4100: 'msg' : unreferenced formal parameter
+         ScrollPropertyWidget.cpp
+         SearchCriteriaWidget.cpp
+         SearchInputPane.cpp
+         TreeItem.cpp
+         WindowPicker.cpp
+     1>ui\custom_widgets\WindowPicker.cpp(89): warning C4100: 'eventType' : unreferenced formal parameter
+         Generating Code...
+         Compiling...
+         WindowPropWidget.cpp
+         WindowTree.cpp
+         AbstractPropertyPage.cpp
+         ComboBoxPropertyPage.cpp
+         DateTimePickerPropertyPage.cpp
+         EditPropertyPage.cpp
+         GenericPropertyPage.cpp
+         ListBoxPropertyPage.cpp
+         ListViewPropertyPage.cpp
+         ProgressBarPropertyPage.cpp
+         PropertiesPane.cpp
+         StatusBarPropertyPage.cpp
+         TabPropertyPage.cpp
+         WindowClassPropertyPage.cpp
+         DynamicData.cpp
+         MessageHandler.cpp
+         Process.cpp
+         RemoteFunctions.cpp
+         SearchCriteria.cpp
+         WindowManager.cpp
+     1>inspector\WindowManager.cpp(486): warning C4100: 'window' : unreferenced formal parameter
+         Generating Code...
+         Compiling...
+         WindowMessage.cpp
+         WindowMisc.cpp
+         Button.cpp
+         ComboBox.cpp
+         DateTimePicker.cpp
+         Edit.cpp
+         ListBox.cpp
+         ListView.cpp
+         ProgressBar.cpp
+         StatusBar.cpp
+         Tab.cpp
+         Window.cpp
+     1>inspector\ui_controls\Window.cpp(500): warning C4189: 'lParam' : local variable is initialized but not referenced
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D QT_NO_DEBUG /D NDEBUG /D _WINDOWS /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_NO_DEBUG /D QT_GUI_LIB /D QT_CORE_LIB /D QT_THREAD_SUPPORT /l"0x0409" /nologo /fo"C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\win_resources.res" win_resources.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\sahil\development\Window-Detective-3.5.1-src\src\\x64\Release\Window Detective_x64_Release.exe" /NOLOGO /LIBPATH:C:\Qt\qtx64_vs2012\lib Psapi.lib qtmain.lib Qt5Core.lib Qt5Gui.lib Qt5Widgets.lib Qt5Xml.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\sahil\development\Window-Detective-3.5.1-src\src\Release\Window Detective_x64_Release.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\win_resources.res"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_AboutDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_AbstractPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_BalloonTip.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_BrushPropertyWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_ColourButton.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_ComboBoxPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_DateTimePickerPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_EditPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_FindDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_FontPropertyWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_GenericPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_HexSpinBox.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_HighlightPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_InfoPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_ListBoxPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_ListViewPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_MainWindow.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_MessageFilterDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_MessageFiltering.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_MessagesPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_MessageWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_PreferencesDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_ProgressBarPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_PropertiesPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_ResizableDockContainer.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_ScrollPropertyWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_SearchCriteriaWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_SearchInputPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_SearchResultsDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_SetPropertiesDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_SizeInputWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_StatusBarPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_SystemColoursPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_SystemInfoDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_SystemMetricsPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_SystemParametersPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_TabPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_TreeItem.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_Window.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_WindowClassPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_WindowManager.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_WindowPicker.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_WindowPropWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\moc_WindowTree.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\qrc_qt_resources.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\SizeInputWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\SystemColoursPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\SystemParametersPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\SystemMetricsPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\IniFile.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\Logger.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\main.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\QtHelpers.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\Resources.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\Settings.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\StringFormatter.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\AboutDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\ActionManager.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\FindDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\HighlightPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\InfoPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\MainWindow.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\MessageFilterDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\MessageFiltering.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\MessagesPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\PreferencesDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\SearchResultsDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\SetPropertiesDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\SystemInfoDialog.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\BalloonTip.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\BrushPropertyWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\ColourButton.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\FontPropertyWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\HexSpinBox.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\MessageWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\ScrollPropertyWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\SearchCriteriaWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\SearchInputPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\TreeItem.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\WindowPicker.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\WindowPropWidget.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\WindowTree.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\AbstractPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\ComboBoxPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\DateTimePickerPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\EditPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\GenericPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\ListBoxPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\ListViewPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\ProgressBarPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\PropertiesPane.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\StatusBarPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\TabPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\WindowClassPropertyPage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\DynamicData.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\MessageHandler.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\Process.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\RemoteFunctions.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\SearchCriteria.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\WindowManager.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\WindowMessage.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\WindowMisc.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\Button.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\ComboBox.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\DateTimePicker.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\Edit.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\ListBox.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\ListView.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\ProgressBar.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\StatusBar.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\Tab.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\\Release\x64\Window.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\x64\Release\WD_Hook_x64_Release.lib"
+         Window Detective.vcxproj -> C:\sahil\development\Window-Detective-3.5.1-src\src\\x64\Release\Window Detective_x64_Release.exe
+     1>Done Building Project "C:\sahil\development\Window-Detective-3.5.1-src\src\Window Detective.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:07:01.74

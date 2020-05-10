@@ -1,0 +1,27 @@
+﻿Build started 5/11/2020 12:29:07 AM.
+     1>Project "C:\sahil\development\Window-Detective-3.5.1-src\src\hook\WD_Hook.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D WIN64 /D _DEBUG /D _WINDOWS /D _USRDLL /D WD_HOOK_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\WD_Hook_x64_Debug.pch" /Fo"C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\\" /Fd"C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\vc110.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D WIN64 /D _DEBUG /D _WINDOWS /D _USRDLL /D WD_HOOK_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\\" /Fd"C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\vc110.pdb" /Gd /TP /errorReport:prompt Hook.cpp
+         Hook.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D WIN64 /D _DEBUG /D _WINDOWS /D _USRDLL /D WD_HOOK_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\WD_Hook_x64_Debug.pch" /Fo"C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\\" /Fd"C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\vc110.pdb" /Gd /TP /errorReport:prompt RemoteInfo.cpp
+         RemoteInfo.cpp
+     1>RemoteInfo.cpp(183): warning C4244: '=' : conversion from 'DWORD_PTR' to 'DWORD', possible loss of data
+     1>RemoteInfo.cpp(197): warning C4244: '=' : conversion from 'DWORD_PTR' to 'DWORD', possible loss of data
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\version_info.res" version_info.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\sahil\development\Window-Detective-3.5.1-src\src\\x64\Debug\WD_Hook_x64_Debug.dll" /NOLOGO Psapi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\sahil\development\Window-Detective-3.5.1-src\src\hook\Debug\WD_Hook_x64_Debug.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\sahil\development\Window-Detective-3.5.1-src\src\\x64\Debug\WD_Hook_x64_Debug.lib" /MACHINE:X64 /DLL "C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\version_info.res"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\Hook.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\RemoteInfo.obj"
+         "C:\sahil\development\Window-Detective-3.5.1-src\src\hook\\Debug\x64\stdafx.obj"
+            Creating library C:\sahil\development\Window-Detective-3.5.1-src\src\\x64\Debug\WD_Hook_x64_Debug.lib and object C:\sahil\development\Window-Detective-3.5.1-src\src\\x64\Debug\WD_Hook_x64_Debug.exp
+         WD_Hook.vcxproj -> C:\sahil\development\Window-Detective-3.5.1-src\src\\x64\Debug\WD_Hook_x64_Debug.dll
+     1>Done Building Project "C:\sahil\development\Window-Detective-3.5.1-src\src\hook\WD_Hook.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.37
