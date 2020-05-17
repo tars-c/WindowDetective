@@ -51,14 +51,23 @@
      <x>0</x>
      <y>0</y>
      <width>1000</width>
-     <height>21</height>
+     <height>47</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuSpy">
     <property name="title">
      <string>&amp;Inspect</string>
     </property>
+    <widget class="QMenu" name="menuRemote">
+     <property name="title">
+      <string>Remote</string>
+     </property>
+     <addaction name="actionConnect_to_server"/>
+     <addaction name="actionStart_Server"/>
+    </widget>
     <addaction name="actnFind"/>
+    <addaction name="separator"/>
+    <addaction name="menuRemote"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -392,6 +401,16 @@
    </property>
    <property name="toolTip">
     <string>View System UI Configuration Settings</string>
+   </property>
+  </action>
+  <action name="actionConnect_to_server">
+   <property name="text">
+    <string>Connect to server</string>
+   </property>
+  </action>
+  <action name="actionStart_Server">
+   <property name="text">
+    <string>Start Server</string>
    </property>
   </action>
  </widget>

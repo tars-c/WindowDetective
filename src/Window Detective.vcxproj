@@ -118,7 +118,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalOptions>"/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" "/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>Psapi.lib;qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Xmld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Psapi.lib;qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Xmld.lib;Qt5Networkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
@@ -151,7 +151,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalOptions>"/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" "/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" /VERBOSE %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>Psapi.lib;qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Xmld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Psapi.lib;qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Xmld.lib;Qt5Networkd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
@@ -186,7 +186,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalOptions>"/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" "/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>Psapi.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Xml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Psapi.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Xml.lib;Qt5Network.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ProgramDatabaseFile>$(ProjectDir)$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
@@ -221,7 +221,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalOptions>"/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" "/MANIFESTDEPENDENCY:type=%27win32%27 name=%27Microsoft.Windows.Common-Controls%27 version=%276.0.0.0%27 publicKeyToken=%276595b64144ccf1df%27 language=%27*%27 processorArchitecture=%27*%27" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>Psapi.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Xml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Psapi.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;Qt5Xml.lib;Qt5Network.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ProgramDatabaseFile>$(ProjectDir)$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
@@ -268,6 +268,18 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Debug\moc\moc_FindDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc\moc_ServerThread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc\moc_RemoteServer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc\moc_RemoteConnectionDialog.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -455,6 +467,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Release\moc\moc_RemoteConnectionDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Release\moc\moc_FindDialog.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -603,7 +619,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="RemoteServer.cpp" />
+    <ClCompile Include="ServerThread.cpp" />
     <ClCompile Include="ui\custom_widgets\SizeInputWidget.cpp" />
+    <ClCompile Include="ui\RemoteConnectionDialog.cpp" />
     <ClCompile Include="ui\SystemColoursPane.cpp" />
     <ClCompile Include="ui\SystemParametersPane.cpp" />
     <ClCompile Include="ui\SystemMetricsPane.cpp" />
@@ -710,6 +729,7 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIRx64)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -DQT_NO_DEBUG -DNDEBUG -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB "-I$(ProjectDir)\." "-I$(QTDIRx64)\mkspecs\win32-msvc2010" "-I$(QTDIRx64)\include" "-I$(QTDIRx64)\include\QtCore" "-I$(QTDIRx64)\include\QtGui" "-I$(QTDIRx64)\include\QtWidgets" "-I$(QTDIRx64)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
     </CustomBuild>
     <ClInclude Include="ui\forms\ui_FindDialog.h" />
+    <ClInclude Include="ui\forms\ui_RemoteConnectionDialog.h" />
     <ClInclude Include="ui\forms\ui_MainWindow.h" />
     <ClInclude Include="ui\forms\ui_MessageFilterDialog.h" />
     <ClInclude Include="ui\forms\ui_MessagesPane.h" />
@@ -838,6 +858,60 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIRx64)\bin\moc.exe;%(FullPath);</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing FindDialog.h...</Message>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing FindDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIRx86)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -DQT_NO_DEBUG -DNDEBUG -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx86)\mkspecs\win32-msvc2010" "-I$(QTDIRx86)\include" "-I$(QTDIRx86)\include\QtCore" "-I$(QTDIRx86)\include\QtGui" "-I$(QTDIRx86)\include\QtWidgets" "-I$(QTDIRx86)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIRx64)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -DQT_NO_DEBUG -DNDEBUG -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx64)\mkspecs\win32-msvc2010" "-I$(QTDIRx64)\include" "-I$(QTDIRx64)\include\QtCore" "-I$(QTDIRx64)\include\QtGui" "-I$(QTDIRx64)\include\QtWidgets" "-I$(QTDIRx64)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
+    </CustomBuild>
+    <CustomBuild Include="RemoteServer.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIRx86)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIRx64)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing RemoteServer.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing RemoteServer.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIRx86)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx86)\mkspecs\win32-msvc2010" "-I$(QTDIRx86)\include" "-I$(QTDIRx86)\include\QtCore" "-I$(QTDIRx86)\include\QtGui" "-I$(QTDIRx86)\include\QtWidgets" "-I$(QTDIRx86)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIRx64)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx64)\mkspecs\win32-msvc2010" "-I$(QTDIRx64)\include" "-I$(QTDIRx64)\include\QtCore" "-I$(QTDIRx64)\include\QtGui" "-I$(QTDIRx64)\include\QtWidgets" "-I$(QTDIRx64)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIRx86)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIRx64)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing RemoteServer.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing RemoteServer.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIRx86)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -DQT_NO_DEBUG -DNDEBUG -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx86)\mkspecs\win32-msvc2010" "-I$(QTDIRx86)\include" "-I$(QTDIRx86)\include\QtCore" "-I$(QTDIRx86)\include\QtGui" "-I$(QTDIRx86)\include\QtWidgets" "-I$(QTDIRx86)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIRx64)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -DQT_NO_DEBUG -DNDEBUG -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx64)\mkspecs\win32-msvc2010" "-I$(QTDIRx64)\include" "-I$(QTDIRx64)\include\QtCore" "-I$(QTDIRx64)\include\QtGui" "-I$(QTDIRx64)\include\QtWidgets" "-I$(QTDIRx64)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ServerThread.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIRx86)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIRx64)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ServerThread.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing ServerThread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIRx86)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx86)\mkspecs\win32-msvc2010" "-I$(QTDIRx86)\include" "-I$(QTDIRx86)\include\QtCore" "-I$(QTDIRx86)\include\QtGui" "-I$(QTDIRx86)\include\QtWidgets" "-I$(QTDIRx86)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIRx64)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx64)\mkspecs\win32-msvc2010" "-I$(QTDIRx64)\include" "-I$(QTDIRx64)\include\QtCore" "-I$(QTDIRx64)\include\QtGui" "-I$(QTDIRx64)\include\QtWidgets" "-I$(QTDIRx64)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIRx86)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIRx64)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ServerThread.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing ServerThread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIRx86)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -DQT_NO_DEBUG -DNDEBUG -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx86)\mkspecs\win32-msvc2010" "-I$(QTDIRx86)\include" "-I$(QTDIRx86)\include\QtCore" "-I$(QTDIRx86)\include\QtGui" "-I$(QTDIRx86)\include\QtWidgets" "-I$(QTDIRx86)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIRx64)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -DQT_NO_DEBUG -DNDEBUG -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx64)\mkspecs\win32-msvc2010" "-I$(QTDIRx64)\include" "-I$(QTDIRx64)\include\QtCore" "-I$(QTDIRx64)\include\QtGui" "-I$(QTDIRx64)\include\QtWidgets" "-I$(QTDIRx64)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
+    </CustomBuild>
+    <CustomBuild Include="ui\RemoteConnectionDialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIRx86)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIRx64)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing RemoteConnectionDialog.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing RemoteConnectionDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIRx86)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx86)\mkspecs\win32-msvc2010" "-I$(QTDIRx86)\include" "-I$(QTDIRx86)\include\QtCore" "-I$(QTDIRx86)\include\QtGui" "-I$(QTDIRx86)\include\QtWidgets" "-I$(QTDIRx86)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIRx64)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx64)\mkspecs\win32-msvc2010" "-I$(QTDIRx64)\include" "-I$(QTDIRx64)\include\QtCore" "-I$(QTDIRx64)\include\QtGui" "-I$(QTDIRx64)\include\QtWidgets" "-I$(QTDIRx64)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIRx86)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIRx64)\bin\moc.exe;%(FullPath);</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing RemoteConnectionDialog.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing RemoteConnectionDialog.h...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc\moc_%(Filename).cpp</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIRx86)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc\moc_%(Filename).cpp"  -DQT_NO_DEBUG -DNDEBUG -D_WINDOWS -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_THREAD_SUPPORT -DQT_WIDGETS_LIB -DQT_XML_LIB  "-I$(ProjectDir)\." "-I$(QTDIRx86)\mkspecs\win32-msvc2010" "-I$(QTDIRx86)\include" "-I$(QTDIRx86)\include\QtCore" "-I$(QTDIRx86)\include\QtGui" "-I$(QTDIRx86)\include\QtWidgets" "-I$(QTDIRx86)\include\QtXml" "-I.\ui\forms" "-I$(ConfigurationName)\moc" "-I$(ConfigurationName)\rcc"</Command>
@@ -1530,6 +1604,25 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIRx86)\bin\uic.exe" -o ".\ui\forms\ui_%(Filename).h" "%(FullPath)"</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIRx64)\bin\uic.exe" -o ".\ui\forms\ui_%(Filename).h" "%(FullPath)"</Command>
     </CustomBuild>
+    <CustomBuild Include="ui\forms\RemoteConnectionDialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIRx86)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIRx64)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\ui\forms\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\ui\forms\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIRx86)\bin\uic.exe" -o ".\ui\forms\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIRx64)\bin\uic.exe" -o ".\ui\forms\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIRx86)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIRx64)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\ui\forms\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\ui\forms\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIRx86)\bin\uic.exe" -o ".\ui\forms\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIRx64)\bin\uic.exe" -o ".\ui\forms\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
     <CustomBuild Include="ui\forms\MainWindow.ui">
       <FileType>Document</FileType>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIRx86)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
@@ -1548,6 +1641,7 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\ui\forms\ui_%(Filename).h;%(Outputs)</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIRx86)\bin\uic.exe" -o ".\ui\forms\ui_%(Filename).h" "%(FullPath)"</Command>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIRx64)\bin\uic.exe" -o ".\ui\forms\ui_%(Filename).h" "%(FullPath)"</Command>
+      <SubType>Designer</SubType>
     </CustomBuild>
     <CustomBuild Include="ui\forms\MessageFilterDialog.ui">
       <FileType>Document</FileType>
@@ -1983,6 +2077,7 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIRx64)\bin\uic.exe" -o ".\ui\forms\ui_%(Filename).h" "%(FullPath)"</Command>
       <SubType>Designer</SubType>
     </CustomBuild>
+    <None Include="ui\forms\RemoteConnection.ui" />
     <None Include="Window Detective.ico">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>

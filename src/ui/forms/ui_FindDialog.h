@@ -71,11 +71,9 @@ public:
         FindDialog->resize(477, 328);
         FindDialog->setMinimumSize(QSize(300, 200));
         verticalLayout = new QVBoxLayout(FindDialog);
-#ifndef Q_OS_MAC
         verticalLayout->setSpacing(6);
-#endif
-        verticalLayout->setContentsMargins(6, 6, 6, 6);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(6, 6, 6, 6);
         tabWidget = new QTabWidget(FindDialog);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
         basicTab = new QWidget();
@@ -116,8 +114,8 @@ public:
         widget_2 = new QWidget(basicTab);
         widget_2->setObjectName(QStringLiteral("widget_2"));
         gridLayout = new QGridLayout(widget_2);
-        gridLayout->setContentsMargins(0, 0, 0, 0);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
         txtWindowText = new QLineEdit(widget_2);
         txtWindowText->setObjectName(QStringLiteral("txtWindowText"));
 
@@ -145,8 +143,8 @@ public:
         advancedTab->setObjectName(QStringLiteral("advancedTab"));
         advancedTab->setAutoFillBackground(true);
         gridLayout_2 = new QGridLayout(advancedTab);
-        gridLayout_2->setContentsMargins(0, 0, 0, 0);
         gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
+        gridLayout_2->setContentsMargins(0, 0, 0, 0);
         scrollArea = new QScrollArea(advancedTab);
         scrollArea->setObjectName(QStringLiteral("scrollArea"));
         scrollArea->setFrameShape(QFrame::NoFrame);
@@ -154,19 +152,19 @@ public:
         scrollArea->setWidgetResizable(true);
         criteriaWidget = new QWidget();
         criteriaWidget->setObjectName(QStringLiteral("criteriaWidget"));
-        criteriaWidget->setGeometry(QRect(0, 0, 459, 261));
+        criteriaWidget->setGeometry(QRect(0, 0, 98, 33));
         horizontalLayout = new QHBoxLayout(criteriaWidget);
         horizontalLayout->setSpacing(0);
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
         booleanRelationPanel = new QWidget(criteriaWidget);
         booleanRelationPanel->setObjectName(QStringLiteral("booleanRelationPanel"));
         booleanRelationPanel->setMinimumSize(QSize(60, 0));
         booleanRelationPanel->setMaximumSize(QSize(60, 16777215));
         booleanRelationPanelLayout = new QVBoxLayout(booleanRelationPanel);
         booleanRelationPanelLayout->setSpacing(7);
-        booleanRelationPanelLayout->setContentsMargins(3, 3, 3, 3);
         booleanRelationPanelLayout->setObjectName(QStringLiteral("booleanRelationPanelLayout"));
+        booleanRelationPanelLayout->setContentsMargins(3, 3, 3, 3);
         padding = new QWidget(booleanRelationPanel);
         padding->setObjectName(QStringLiteral("padding"));
         padding->setMinimumSize(QSize(0, 20));

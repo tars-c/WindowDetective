@@ -39,6 +39,7 @@
 #include "SetPropertiesDialog.h"
 #include "custom_widgets/WindowPicker.h"
 #include "custom_widgets/BalloonTip.h"
+#include "RemoteConnectionDialog.h"
 
 
 #define MESSAGE_TIMEOUT       2000  //ms
@@ -54,6 +55,7 @@ private:
     QMenu windowMenu, processMenu;
     PreferencesDialog* preferencesDialog;
     FindDialog* findDialog;
+	RemoteConnectionDialog* remoteConnectionDialog;
     SystemInfoDialog* systemInfoDialog;
     AboutDialog* aboutDialog;
     QToolButton logButton;
@@ -70,6 +72,7 @@ public:
     void writeSmartSettings();
     PreferencesDialog* getPreferencesDialog();
     FindDialog* getFindDialog();
+	RemoteConnectionDialog* getRemoteConnectionDialog();
     SystemInfoDialog* getSystemInfoDialog();
 private:
     void buildTreeMenus();
@@ -89,6 +92,7 @@ public slots:
     void refreshWindowTree();
     void openPreferences();
     void openFindDialog();
+	void openRemoteConnectionDialog();
     void openSystemInfoDialog();
     void treeViewChanged(int index);
     void treeItemChanged(QTreeWidgetItem* current, QTreeWidgetItem* previous);

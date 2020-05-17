@@ -36,6 +36,7 @@ MainWindow::MainWindow(QMainWindow *parent) :
     isFirstTimeShow(true),
     preferencesDialog(NULL),
     findDialog(NULL),
+	remoteConnectionDialog(nullptr),
     systemInfoDialog(NULL),
     aboutDialog(NULL),
     logButton(),
@@ -75,6 +76,7 @@ MainWindow::MainWindow(QMainWindow *parent) :
 
     // Action events (menu or toolbar)
     connect(actnPreferences, SIGNAL(triggered()), this, SLOT(openPreferences()));
+	connect(actionConnect_to_server, SIGNAL(triggered()), this, SLOT(openRemoteConnectionDialog()));
     connect(actnFind, SIGNAL(triggered()), this, SLOT(openFindDialog()));
     connect(actnSystemInfo, SIGNAL(triggered()), this, SLOT(openSystemInfoDialog()));
     connect(actnRefresh, SIGNAL(triggered()), this, SLOT(refreshWindowTree()));
@@ -112,6 +114,10 @@ MainWindow::~MainWindow() {
     if (findDialog) {
         delete findDialog;
         findDialog = NULL;
+    }
+	if (remoteConnectionDialog) {
+        delete remoteConnectionDialog;
+        remoteConnectionDialog = nullptr;
     }
     if (systemInfoDialog) {
         delete systemInfoDialog;
@@ -289,6 +295,15 @@ PreferencesDialog* MainWindow::getPreferencesDialog() {
     return preferencesDialog;
 }
 
+RemoteConnectionDialog* MainWindow::getRemoteConnectionDialog()
+{
+	if(remoteConnectionDialog == nullptr)
+	{
+		remoteConnectionDialog = new RemoteConnectionDialog(this);
+	}
+	return remoteConnectionDialog;
+}
+
 FindDialog* MainWindow::getFindDialog() {
     if (!findDialog) {
         findDialog = new FindDialog(this);
@@ -400,6 +415,10 @@ void MainWindow::refreshWindowTree() {
 
 void MainWindow::openPreferences() {
     openDialog(getPreferencesDialog());
+}
+
+void MainWindow::openRemoteConnectionDialog() {
+	openDialog(getRemoteConnectionDialog());
 }
 
 void MainWindow::openFindDialog() {

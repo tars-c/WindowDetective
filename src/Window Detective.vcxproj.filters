@@ -539,6 +539,24 @@
     <ClCompile Include="ui\custom_widgets\SizeInputWidget.cpp">
       <Filter>Source Files\ui\custom_widgets</Filter>
     </ClCompile>
+    <ClCompile Include="Debug\moc\moc_RemoteConnectionDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc\moc_RemoteConnectionDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoteServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc\moc_RemoteServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\RemoteConnectionDialog.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="window_detective\Error.h">
@@ -669,6 +687,15 @@
     </ClInclude>
     <ClInclude Include="ui\forms\ui_SearchResultsDialog.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\forms\ui_RemoteConnectionDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\RemoteConnectionDialog.h">
+      <Filter>Header Files\ui\custom_widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerThread.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -848,6 +875,18 @@
     <CustomBuild Include="ui\custom_widgets\SizeInputWidget.h">
       <Filter>Header Files\ui\custom_widgets</Filter>
     </CustomBuild>
+    <CustomBuild Include="ui\FindDialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\forms\RemoteConnectionDialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RemoteServer.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\RemoteConnectionDialog.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <None Include="Window Detective.ico">
@@ -957,6 +996,9 @@
     </None>
     <None Include="img\magnifying_glass.png">
       <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ui\forms\RemoteConnection.ui">
+      <Filter>Form Files</Filter>
     </None>
   </ItemGroup>
 </Project>

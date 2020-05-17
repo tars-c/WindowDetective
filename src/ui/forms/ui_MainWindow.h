@@ -45,11 +45,14 @@ public:
     QAction *actnCascade;
     QAction *actnCloseAllMdi;
     QAction *actnSystemInfo;
+    QAction *actionConnect_to_server;
+    QAction *actionStart_Server;
     QWidget *centralwidget;
     QGridLayout *gridLayout_2;
     QMdiArea *mdiArea;
     QMenuBar *menubar;
     QMenu *menuSpy;
+    QMenu *menuRemote;
     QMenu *menuHelp;
     QMenu *menuEdit;
     QMenu *menuView;
@@ -113,6 +116,10 @@ public:
         QIcon icon6;
         icon6.addFile(QStringLiteral(":/img/system_info.png"), QSize(), QIcon::Normal, QIcon::Off);
         actnSystemInfo->setIcon(icon6);
+        actionConnect_to_server = new QAction(MainWindow);
+        actionConnect_to_server->setObjectName(QStringLiteral("actionConnect_to_server"));
+        actionStart_Server = new QAction(MainWindow);
+        actionStart_Server->setObjectName(QStringLiteral("actionStart_Server"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         gridLayout_2 = new QGridLayout(centralwidget);
@@ -129,9 +136,11 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1000, 21));
+        menubar->setGeometry(QRect(0, 0, 1000, 47));
         menuSpy = new QMenu(menubar);
         menuSpy->setObjectName(QStringLiteral("menuSpy"));
+        menuRemote = new QMenu(menuSpy);
+        menuRemote->setObjectName(QStringLiteral("menuRemote"));
         menuHelp = new QMenu(menubar);
         menuHelp->setObjectName(QStringLiteral("menuHelp"));
         menuEdit = new QMenu(menubar);
@@ -220,6 +229,10 @@ public:
         menubar->addAction(menuWindows->menuAction());
         menubar->addAction(menuHelp->menuAction());
         menuSpy->addAction(actnFind);
+        menuSpy->addSeparator();
+        menuSpy->addAction(menuRemote->menuAction());
+        menuRemote->addAction(actionConnect_to_server);
+        menuRemote->addAction(actionStart_Server);
         menuHelp->addAction(actnHelp);
         menuHelp->addSeparator();
         menuHelp->addAction(actnAbout);
@@ -262,10 +275,13 @@ public:
 #ifndef QT_NO_TOOLTIP
         actnSystemInfo->setToolTip(QApplication::translate("MainWindow", "View System UI Configuration Settings", 0));
 #endif // QT_NO_TOOLTIP
+        actionConnect_to_server->setText(QApplication::translate("MainWindow", "Connect to server", 0));
+        actionStart_Server->setText(QApplication::translate("MainWindow", "Start Server", 0));
 #ifndef QT_NO_WHATSTHIS
         mdiArea->setWhatsThis(QApplication::translate("MainWindow", "The main pane, holds multiple property or message panes.", 0));
 #endif // QT_NO_WHATSTHIS
         menuSpy->setTitle(QApplication::translate("MainWindow", "&Inspect", 0));
+        menuRemote->setTitle(QApplication::translate("MainWindow", "Remote", 0));
         menuHelp->setTitle(QApplication::translate("MainWindow", "&Help", 0));
         menuEdit->setTitle(QApplication::translate("MainWindow", "&Edit", 0));
         menuView->setTitle(QApplication::translate("MainWindow", "&View", 0));
